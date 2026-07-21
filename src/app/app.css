@@ -1,0 +1,13 @@
+.fancy-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fancy-button:focus {
+  outline: 2px solid #000;
+}
