@@ -1,0 +1,21 @@
+.fancy-checkbox {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.checked-icon::before {
+    content: "✔";
+    color: green;
+}
+
+.p-sr-only {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,16 +1,15 @@
-<span id="chk-label">Remember Me</span>
+<label for="chkbox">Remember Me</label>
 
-<div
-  class="fancy-checkbox"
-  role="checkbox"
-  [attr.aria-checked]="checked"
-  tabindex="0"
-  aria-labelledby="chk-label"
-  (click)="toggle()"
-  (keydown)="onKeyDown($event)">
+<div class="fancy-checkbox" (click)="toggle()">
+    <input
+        class="p-sr-only"
+        type="checkbox"
+        id="chkbox"
+        (focus)="updateParentVisuals()"
+        (blur)="updateParentVisuals()"
+        (keydown)="$event.keyCode === 32 && updateParentVisuals()">
 
-  @if (checked) {
-    <i class="checked-icon"></i>
-  }
-
+    @if (checked) {
+        <i class="checked-icon"></i>
+    }
 </div>

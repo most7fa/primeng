@@ -13,10 +13,7 @@ export class App {
     this.checked = !this.checked;
   }
 
-  onKeyDown(event: KeyboardEvent) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      this.toggle();
-    }
+  updateParentVisuals() {
+    console.log('Focus/Blur');
   }
 }
