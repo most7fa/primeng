@@ -1,21 +1,21 @@
-.fancy-checkbox {
-    width: 24px;
-    height: 24px;
-    border: 2px solid #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin-top: 10px;
+.p-anchored-overlay-enter-active {
+    animation: demo-overlay-in 0.8s ease-out;
 }
 
-.checked-icon::before {
-    content: "✔";
-    color: green;
+.p-anchored-overlay-leave-active {
+    animation: demo-overlay-out 0.8s ease-in;
 }
 
-.p-sr-only {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
+@keyframes demo-overlay-in {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+}
+
+@keyframes demo-overlay-out {
+    to {
+        opacity: 0;
+        transform: translateY(50%);
+    }
 }

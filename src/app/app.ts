@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { SelectModule } from 'primeng/select';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  imports: [FormsModule, SelectModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  checked = false;
+  cities = [
+    { name: 'Cairo' },
+    { name: 'Alexandria' },
+    { name: 'Menofia' },
+    { name: 'Sharm Elshakh' },
+    { name: 'Mansoura' }
+  ];
 
-  toggle() {
-    this.checked = !this.checked;
-  }
-
-  updateParentVisuals() {
-    console.log('Focus/Blur');
-  }
+  selectedCity: any;
 }

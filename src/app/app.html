@@ -1,15 +1,6 @@
-<label for="chkbox">Remember Me</label>
-
-<div class="fancy-checkbox" (click)="toggle()">
-    <input
-        class="p-sr-only"
-        type="checkbox"
-        id="chkbox"
-        (focus)="updateParentVisuals()"
-        (blur)="updateParentVisuals()"
-        (keydown)="$event.keyCode === 32 && updateParentVisuals()">
-
-    @if (checked) {
-        <i class="checked-icon"></i>
-    }
-</div>
+<p-select
+    [options]="cities"
+    [(ngModel)]="selectedCity"
+    optionLabel="name"
+    placeholder="Select a City">
+</p-select>
