@@ -1,1 +1,16 @@
-<input type="checkbox" value="Prime" name="ui" checked/>
+<span id="chk-label">Remember Me</span>
+
+<div
+  class="fancy-checkbox"
+  role="checkbox"
+  [attr.aria-checked]="checked"
+  tabindex="0"
+  aria-labelledby="chk-label"
+  (click)="toggle()"
+  (keydown)="onKeyDown($event)">
+
+  @if (checked) {
+    <i class="checked-icon"></i>
+  }
+
+</div>

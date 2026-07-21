@@ -6,4 +6,17 @@ import { Component } from '@angular/core';
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {}
+export class App {
+  checked = false;
+
+  toggle() {
+    this.checked = !this.checked;
+  }
+
+  onKeyDown(event: KeyboardEvent) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      this.toggle();
+    }
+  }
+}
