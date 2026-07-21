@@ -1,16 +1,20 @@
-import { Component, signal } from '@angular/core';
-import { PIcon } from '@primeicons/angular/p-icon';
-import { ButtonModule } from 'primeng/button';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { SelectModule } from 'primeng/select';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PIcon, ButtonModule],
+  imports: [SelectModule, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  icons = ['home', 'star', 'heart', 'bell'];
+  cities = [
+    { name: 'Cairo' },
+    { name: 'Alexandria' },
+    { name: 'Mansoura' }
+  ];
 
-  selectedIcon = signal<string>('home');
+  selectedCity: any;
 }

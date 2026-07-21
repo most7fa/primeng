@@ -1,16 +1,5 @@
-<div class="flex flex-col items-center gap-4">
-    <svg [pIcon]="selectedIcon()" [size]="32"></svg>
-
-    <div class="flex gap-2">
-        @for (icon of icons; track icon) {
-            <p-button
-                [text]="selectedIcon() !== icon"
-                severity="secondary"
-                (onClick)="selectedIcon.set(icon)">
-
-                <svg [pIcon]="icon"></svg>
-
-            </p-button>
-        }
-    </div>
-</div>
+<p-select>
+    <ng-template #dropdownicon>
+        <img alt="dropdown icon" src="/assets/icons/arrow_down.png">
+    </ng-template>
+</p-select>
