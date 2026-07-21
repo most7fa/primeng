@@ -1,13 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
+import { Component } from '@angular/core';
+import { Check } from '@primeicons/angular/check';
+import { Times } from '@primeicons/angular/times';
+import { Search } from '@primeicons/angular/search';
+import { User } from '@primeicons/angular/user';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ButtonModule],
+  standalone: true,
+  imports: [Check, Times, Search, User],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  protected readonly title = signal('primeng');
-}
+export class App {}
