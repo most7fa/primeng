@@ -1,7 +1,13 @@
-<div class="w-full" style="max-width: 300px; margin: 0 auto;">
-  <p-slider [(ngModel)]="value"></p-slider>
+<div class="flex justify-center">
+  <textarea
+    rows="5"
+    cols="30"
+    pTextarea
+    [(ngModel)]="value"
+    placeholder="Enter your text">
+  </textarea>
 </div>
 
-<p style="text-align: center; margin-top: 16px;">
-  Value: {{ value }}
+<p style="margin-top: 1rem; text-align: center;">
+  {{ value }}
 </p>

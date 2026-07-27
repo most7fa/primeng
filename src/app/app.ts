@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SliderModule } from 'primeng/slider';
+import { TextareaModule } from 'primeng/textarea';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SliderModule, FormsModule],
+  imports: [TextareaModule, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  value: number = 50;
+  value: string = '';
 }
