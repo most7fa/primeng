@@ -1,11 +1,11 @@
 <div class="flex justify-center">
-  <p-autocomplete
-    [(ngModel)]="selectedCommand"
-    [suggestions]="filteredCommands"
-    (completeMethod)="search($event)"
-    optionLabel="label"
-    placeholder="Type a command..."
-    inputStyleClass="w-full md:w-56"
-    scrollHeight="14rem">
-  </p-autocomplete>
+  <p-cascadeselect
+    [(ngModel)]="selectedCity"
+    [options]="countries"
+    optionLabel="cname"
+    optionGroupLabel="name"
+    [optionGroupChildren]="['states', 'cities']"
+    [style]="{ minWidth: '14rem' }"
+    placeholder="Select a City">
+  </p-cascadeselect>
 </div>
