@@ -1,34 +1,13 @@
-<div class="flex flex-col items-center gap-4">
+<p-toast></p-toast>
 
-  <div class="flex flex-wrap gap-4 justify-center">
-    <button pButton icon="pi pi-home" aria-label="Home"></button>
-
-    <button
-      pButton
-      label="Profile"
-      icon="pi pi-user">
-    </button>
-
-    <button
-      pButton
-      label="Save"
-      icon="pi pi-check"
-      iconPos="right">
-    </button>
-  </div>
-
-  <div class="flex flex-wrap gap-4 justify-center">
-    <button
-      pButton
-      label="Search"
-      icon="pi pi-search">
-    </button>
-
-    <button
-      pButton
-      label="Update"
-      icon="pi pi-refresh">
-    </button>
-  </div>
-
+<div style="position: relative; height: 240px;">
+  <p-speedDial
+    [model]="items"
+    direction="up"
+    [style]="{
+      position: 'absolute',
+      right: '0',
+      bottom: '0'
+    }">
+  </p-speedDial>
 </div>
