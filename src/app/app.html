@@ -1,6 +1,11 @@
-<p-select
-    [options]="cities"
-    [(ngModel)]="selectedCity"
-    optionLabel="name"
-    placeholder="Select a City">
-</p-select>
+<div class="flex justify-center">
+  <p-autocomplete
+    [(ngModel)]="selectedCommand"
+    [suggestions]="filteredCommands"
+    (completeMethod)="search($event)"
+    optionLabel="label"
+    placeholder="Type a command..."
+    inputStyleClass="w-full md:w-56"
+    scrollHeight="14rem">
+  </p-autocomplete>
+</div>
