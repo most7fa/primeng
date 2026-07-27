@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { TextareaModule } from 'primeng/textarea';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [TextareaModule, FormsModule],
+  imports: [ButtonModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  value: string = '';
-}
+export class App {}
