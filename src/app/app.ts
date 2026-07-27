@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { KnobModule } from 'primeng/knob';
+import { RadioButtonModule } from 'primeng/radiobutton';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [KnobModule, FormsModule],
+  imports: [RadioButtonModule, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  value: number = 50;
+  ingredient: string | undefined;
 }
