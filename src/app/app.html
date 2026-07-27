@@ -1,8 +1,7 @@
-<div class="flex justify-center">
-  <p-selectButton
-    [options]="stateOptions"
-    [(ngModel)]="value"
-    optionLabel="label"
-    optionValue="value">
-  </p-selectButton>
+<div class="w-full" style="max-width: 300px; margin: 0 auto;">
+  <p-slider [(ngModel)]="value"></p-slider>
 </div>
+
+<p style="text-align: center; margin-top: 16px;">
+  Value: {{ value }}
+</p>
