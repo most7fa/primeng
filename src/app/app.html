@@ -1,3 +1,8 @@
 <div class="flex justify-center">
-    <p-rating [(ngModel)]="value"></p-rating>
+  <p-selectButton
+    [options]="stateOptions"
+    [(ngModel)]="value"
+    optionLabel="label"
+    optionValue="value">
+  </p-selectButton>
 </div>

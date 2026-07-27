@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RatingModule } from 'primeng/rating';
+import { SelectButtonModule } from 'primeng/selectbutton';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RatingModule, FormsModule],
+  imports: [SelectButtonModule, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  value: number = 3.5;
+  stateOptions = [
+    { label: 'One-Way', value: 'one-way' },
+    { label: 'Return', value: 'return' }
+  ];
+
+  value: string = 'one-way';
 }
