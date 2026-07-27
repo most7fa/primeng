@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputOtpModule } from 'primeng/inputotp';
+import { KnobModule } from 'primeng/knob';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [InputOtpModule, FormsModule],
+  imports: [KnobModule, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  value: any;
+  value: number = 50;
 }
