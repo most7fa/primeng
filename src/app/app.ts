@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputOtpModule } from 'primeng/inputotp';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FloatLabelModule, InputTextModule, FormsModule],
+  imports: [InputOtpModule, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  value: string | undefined;
+  value: any;
 }
