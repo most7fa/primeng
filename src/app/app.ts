@@ -1,25 +1,13 @@
-import { Component, inject } from '@angular/core';
-import { FileUploadModule, FileUploadEvent } from 'primeng/fileupload';
+import { Component } from '@angular/core';
+import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { MessageService } from 'primeng/api';
+import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FileUploadModule, ButtonModule, ToastModule],
-  providers: [MessageService],
+  imports: [CardModule, ButtonModule, InputTextModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
-  private messageService = inject(MessageService);
-
-  onUpload(event: FileUploadEvent) {
-    this.messageService.add({
-      severity: 'success',
-      summary: 'Success',
-      detail: 'File Uploaded'
-    });
-  }
-}
+export class App {}
