@@ -1,58 +1,25 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { SpeedDialModule } from 'primeng/speeddial';
+import { Component, inject } from '@angular/core';
+import { FileUploadModule, FileUploadEvent } from 'primeng/fileupload';
+import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SpeedDialModule, ToastModule],
+  imports: [FileUploadModule, ButtonModule, ToastModule],
   providers: [MessageService],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App implements OnInit {
+export class App {
   private messageService = inject(MessageService);
 
-  items: MenuItem[] = [];
-
-  ngOnInit() {
-    this.items = [
-      {
-        icon: 'pi pi-pencil',
-        command: () =>
-          this.messageService.add({
-            severity: 'info',
-            summary: 'Add',
-            detail: 'Data Added'
-          })
-      },
-      {
-        icon: 'pi pi-refresh',
-        command: () =>
-          this.messageService.add({
-            severity: 'success',
-            summary: 'Update',
-            detail: 'Data Updated'
-          })
-      },
-      {
-        icon: 'pi pi-trash',
-        command: () =>
-          this.messageService.add({
-            severity: 'error',
-            summary: 'Delete',
-            detail: 'Data Deleted'
-          })
-      },
-      {
-        icon: 'pi pi-upload'
-      },
-      {
-        icon: 'pi pi-external-link',
-        url: 'https://angular.dev',
-        target: '_blank'
-      }
-    ];
+  onUpload(event: FileUploadEvent) {
+    this.messageService.add({
+      severity: 'success',
+      summary: 'Success',
+      detail: 'File Uploaded'
+    });
   }
 }
