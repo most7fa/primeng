@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CardFormComponent } from './components/card-form/card-form';
+import { SpeedDialComponent } from './components/speed-dial/speed-dial';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CardFormComponent],
+  imports: [SpeedDialComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {}
+export class App {} 

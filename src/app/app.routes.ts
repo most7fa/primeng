@@ -26,7 +26,7 @@ export const routes: Routes = [
   { path: 'semantic-html', loadComponent: () => import('./components/semantic-html/semantic-html').then((m) => m.SemanticHtml) },
   { path: 'size', loadComponent: () => import('./components/size/size').then((m) => m.Size) },
   { path: 'slider', loadComponent: () => import('./components/slider/slider').then((m) => m.Slider) },
-  { path: 'speed-dial', loadComponent: () => import('./components/speed-dial/speed-dial').then((m) => m.SpeedDial) },
+  { path: 'speed-dial', loadComponent: () => import('./components/speed-dial/speed-dial').then((m) => m.SpeedDialComponent) },
   { path: 'spin', loadComponent: () => import('./components/spin/spin').then((m) => m.Spin) },
   { path: 'textarea', loadComponent: () => import('./components/textarea/textarea').then((m) => m.Textarea) },
   { path: '**', redirectTo: 'card-form' }
