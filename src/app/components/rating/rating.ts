@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { RatingModule } from 'primeng/rating';
 
 @Component({
-  selector: 'app-rating',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [RatingModule, FormsModule],
   templateUrl: './rating.html',
-  styleUrl: './rating.css',
 })
-export class Rating {
-
+export class App {
+  value: number = 3.5;
 }
