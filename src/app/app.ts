@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { FileUploadComponent } from './components/file-upload/file-upload';
+import { CardFormComponent } from './components/card-form/card-form';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [FileUploadComponent],
+  imports: [CardFormComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,3 +1,33 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'card-form' },
+  { path: 'accessible', loadComponent: () => import('./components/accessible/accessible').then((m) => m.Accessible) },
+  { path: 'accessible-checkbox', loadComponent: () => import('./components/accessible-checkbox/accessible-checkbox').then((m) => m.AccessibleCheckbox) },
+  { path: 'autocomplete', loadComponent: () => import('./components/autocomplete/autocomplete').then((m) => m.Autocomplete) },
+  { path: 'button-icons', loadComponent: () => import('./components/button-icons/button-icons').then((m) => m.ButtonIcons) },
+  { path: 'card-form', loadComponent: () => import('./components/card-form/card-form').then((m) => m.CardFormComponent) },
+  { path: 'cascadeselect', loadComponent: () => import('./components/cascadeselect/cascadeselect').then((m) => m.Cascadeselect) },
+  { path: 'clicked', loadComponent: () => import('./components/clicked/clicked').then((m) => m.Clicked) },
+  { path: 'color', loadComponent: () => import('./components/color/color').then((m) => m.Color) },
+  { path: 'custom-icon-image', loadComponent: () => import('./components/custom-icon-image/custom-icon-image').then((m) => m.CustomIconImage) },
+  { path: 'datepicker', loadComponent: () => import('./components/datepicker/datepicker').then((m) => m.Datepicker) },
+  { path: 'file-upload', loadComponent: () => import('./components/file-upload/file-upload').then((m) => m.FileUploadComponent) },
+  { path: 'float-label', loadComponent: () => import('./components/float-label/float-label').then((m) => m.FloatLabel) },
+  { path: 'html-checkbox', loadComponent: () => import('./components/html-checkbox/html-checkbox').then((m) => m.HtmlCheckbox) },
+  { path: 'input-otp', loadComponent: () => import('./components/input-otp/input-otp').then((m) => m.InputOtp) },
+  { path: 'input-to-username', loadComponent: () => import('./components/input-to-username/input-to-username').then((m) => m.InputToUsername) },
+  { path: 'knob', loadComponent: () => import('./components/knob/knob').then((m) => m.Knob) },
+  { path: 'overlay-animation', loadComponent: () => import('./components/overlay-animation/overlay-animation').then((m) => m.OverlayAnimation) },
+  { path: 'programmatic', loadComponent: () => import('./components/programmatic/programmatic').then((m) => m.Programmatic) },
+  { path: 'radio-button', loadComponent: () => import('./components/radio-button/radio-button').then((m) => m.RadioButton) },
+  { path: 'rating', loadComponent: () => import('./components/rating/rating').then((m) => m.Rating) },
+  { path: 'select-button', loadComponent: () => import('./components/select-button/select-button').then((m) => m.SelectButton) },
+  { path: 'semantic-html', loadComponent: () => import('./components/semantic-html/semantic-html').then((m) => m.SemanticHtml) },
+  { path: 'size', loadComponent: () => import('./components/size/size').then((m) => m.Size) },
+  { path: 'slider', loadComponent: () => import('./components/slider/slider').then((m) => m.Slider) },
+  { path: 'speed-dial', loadComponent: () => import('./components/speed-dial/speed-dial').then((m) => m.SpeedDial) },
+  { path: 'spin', loadComponent: () => import('./components/spin/spin').then((m) => m.Spin) },
+  { path: 'textarea', loadComponent: () => import('./components/textarea/textarea').then((m) => m.Textarea) },
+  { path: '**', redirectTo: 'card-form' }
+];
