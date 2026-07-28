@@ -5,7 +5,7 @@ export const routes: Routes = [
   { path: 'accessible', loadComponent: () => import('./components/accessible/accessible').then((m) => m.Accessible) },
   { path: 'accessible-checkbox', loadComponent: () => import('./components/accessible-checkbox/accessible-checkbox').then((m) => m.AccessibleCheckbox) },
   { path: 'autocomplete', loadComponent: () => import('./components/autocomplete/autocomplete').then((m) => m.Autocomplete) },
-  { path: 'button-icons', loadComponent: () => import('./components/button-icons/button-icons').then((m) => m.ButtonIcons) },
+  { path: 'button-icons', loadComponent: () => import('./components/button-icons/button-icons').then((m) => m.ButtonIconsComponent) },
   { path: 'card-form', loadComponent: () => import('./components/card-form/card-form').then((m) => m.CardFormComponent) },
   { path: 'cascadeselect', loadComponent: () => import('./components/cascadeselect/cascadeselect').then((m) => m.Cascadeselect) },
   { path: 'clicked', loadComponent: () => import('./components/clicked/clicked').then((m) => m.Clicked) },

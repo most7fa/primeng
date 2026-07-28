@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { SpeedDialComponent } from './components/speed-dial/speed-dial';
+import { ButtonIconsComponent } from './components/button-icons/button-icons';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [SpeedDialComponent],
+  imports: [ButtonIconsComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {} 
+export class App {}

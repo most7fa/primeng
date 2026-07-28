@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-button-icons',
-  imports: [],
+  standalone: true,
+  imports: [ButtonModule],
   templateUrl: './button-icons.html',
-  styleUrl: './button-icons.css',
 })
-export class ButtonIcons {
-
-}
+export class ButtonIconsComponent {}
