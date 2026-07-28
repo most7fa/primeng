@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { SliderModule } from 'primeng/slider';
 
 @Component({
-  selector: 'app-slider',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [SliderModule, FormsModule],
   templateUrl: './slider.html',
-  styleUrl: './slider.css',
 })
-export class Slider {
-
+export class App {
+  value: number = 50;
 }
