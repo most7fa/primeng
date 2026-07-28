@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerModule } from 'primeng/datepicker';
 
 @Component({
-  selector: 'app-datepicker',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [DatePickerModule, FormsModule],
   templateUrl: './datepicker.html',
-  styleUrl: './datepicker.css',
 })
-export class Datepicker {
-
+export class App {
+  date: Date | undefined;
 }
