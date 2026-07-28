@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { KnobModule } from 'primeng/knob';
 
 @Component({
-  selector: 'app-knob',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [KnobModule, FormsModule],
   templateUrl: './knob.html',
-  styleUrl: './knob.css',
 })
-export class Knob {
-
+export class App {
+  value: number = 50;
 }
