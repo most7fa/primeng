@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-
+import { FileUploadComponent } from './components/file-upload/file-upload';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CardModule, ButtonModule, InputTextModule],
+  imports: [FileUploadComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
