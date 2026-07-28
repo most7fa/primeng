@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-accessible-checkbox',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
   templateUrl: './accessible-checkbox.html',
-  styleUrl: './accessible-checkbox.css',
 })
-export class AccessibleCheckbox {
+export class App {
+  checked = false;
 
+  toggle() {
+    this.checked = !this.checked;
+  }
+
+  updateParentVisuals() {
+    console.log('Focus/Blur');
+  }
 }
