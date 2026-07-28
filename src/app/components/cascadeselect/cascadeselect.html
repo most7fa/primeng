@@ -1,1 +1,11 @@
-<p>cascadeselect works!</p>
+<div class="flex justify-center">
+  <p-cascadeselect
+    [(ngModel)]="selectedCity"
+    [options]="countries"
+    optionLabel="cname"
+    optionGroupLabel="name"
+    [optionGroupChildren]="['states', 'cities']"
+    [style]="{ minWidth: '14rem' }"
+    placeholder="Select a City">
+  </p-cascadeselect>
+</div>
