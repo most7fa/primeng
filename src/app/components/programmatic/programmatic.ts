@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { PIcon } from '@primeicons/angular/p-icon';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'app-programmatic',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [PIcon, ButtonModule],
   templateUrl: './programmatic.html',
-  styleUrl: './programmatic.css',
 })
-export class Programmatic {
+export class App {
+  icons = ['home', 'star', 'heart', 'bell'];
 
+  selectedIcon = signal<string>('home');
 }
