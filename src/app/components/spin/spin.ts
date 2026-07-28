@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { Spinner } from '@primeicons/angular/spinner';
 
 @Component({
-  selector: 'app-spin',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [Spinner],
   templateUrl: './spin.html',
-  styleUrl: './spin.css',
 })
-export class Spin {
-
-}
+export class App {}
