@@ -1,11 +1,21 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-accessible',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
   templateUrl: './accessible.html',
-  styleUrl: './accessible.css',
 })
-export class Accessible {
+export class App {
+  checked = false;
 
+  toggle() {
+    this.checked = !this.checked;
+  }
+
+  onKeyDown(event: KeyboardEvent) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      this.toggle();
+    }
+  }
 }
