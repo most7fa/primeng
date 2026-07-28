@@ -1,1 +1,13 @@
-<p>textarea works!</p>
+<div class="flex justify-center">
+  <textarea
+    rows="5"
+    cols="30"
+    pTextarea
+    [(ngModel)]="value"
+    placeholder="Enter your text">
+  </textarea>
+</div>
+
+<p style="margin-top: 1rem; text-align: center;">
+  {{ value }}
+</p>

@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { TextareaModule } from 'primeng/textarea';
 
 @Component({
-  selector: 'app-textarea',
-  imports: [],
+  selector: 'app-root',
+  standalone: true,
+  imports: [TextareaModule, FormsModule],
   templateUrl: './textarea.html',
-  styleUrl: './textarea.css',
 })
-export class Textarea {
-
+export class App {
+  value: string = '';
 }
