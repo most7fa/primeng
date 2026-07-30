@@ -10,6 +10,7 @@ import { ColorComponent } from './components/color/color';
 import { CustomIconImageComponent } from './components/custom-icon-image/custom-icon-image';
 import { DatepickerComponent } from './components/datepicker/datepicker';
 import { Drawer } from './components/drawer/drawer';
+import { Accordion } from './components/accordion/accordion';
 import { FileUploadComponent } from './components/file-upload/file-upload';
 import { FloatLabelComponent } from './components/float-label/float-label';
 import { HtmlCheckbox } from './components/html-checkbox/html-checkbox';
@@ -33,7 +34,7 @@ import { TextareaComponent } from './components/textarea/textarea';
   imports: [
     AccessibleComponent, AccessibleCheckboxComponent, AutocompleteComponent, ButtonIconsComponent,
     CardFormComponent, CascadeselectComponent, ClickedComponent, ColorComponent,
-    CustomIconImageComponent, DatepickerComponent, Drawer, FileUploadComponent, FloatLabelComponent,
+    CustomIconImageComponent, DatepickerComponent, Drawer, Accordion, FileUploadComponent, FloatLabelComponent,
     HtmlCheckbox, InputOtpComponent, InputToUsernameComponent, KnobComponent,
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
