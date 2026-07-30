@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SelectModule } from 'primeng/select';
 
@@ -6,6 +6,7 @@ import { SelectModule } from 'primeng/select';
   selector: 'app-overlay-animation',
   standalone: true,
   imports: [FormsModule, SelectModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './overlay-animation.html',
 })
 export class OverlayAnimationComponent {

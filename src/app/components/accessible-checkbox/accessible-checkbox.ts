@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-accessible-checkbox',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './accessible-checkbox.html',
 })
 export class AccessibleCheckboxComponent {

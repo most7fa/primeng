@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AutoCompleteModule, AutoCompleteCompleteEvent } from 'primeng/autocomplete';
 
@@ -11,6 +11,7 @@ interface Command {
   selector: 'app-autocomplete',
   standalone: true,
   imports: [AutoCompleteModule, FormsModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './AutoComplete.html',
 })
 export class AutocompleteComponent {

@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, ChangeDetectionStrategy } from '@angular/core';
 import { PIcon } from '@primeicons/angular/p-icon';
 import { ButtonModule } from 'primeng/button';
 
@@ -6,6 +6,7 @@ import { ButtonModule } from 'primeng/button';
   selector: 'app-programmatic',
   standalone: true,
   imports: [PIcon, ButtonModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './programmatic.html',
 })
 export class ProgrammaticComponent {

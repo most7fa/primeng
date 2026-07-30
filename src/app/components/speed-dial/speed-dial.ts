@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, ChangeDetectionStrategy } from '@angular/core';
 import { SpeedDialModule } from 'primeng/speeddial';
 import { ToastModule } from 'primeng/toast';
 import { MenuItem, MessageService } from 'primeng/api';
@@ -8,6 +8,7 @@ import { MenuItem, MessageService } from 'primeng/api';
   standalone: true,
   imports: [SpeedDialModule, ToastModule],
   providers: [MessageService],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './speed-dial.html',
 })
 export class SpeedDialComponent implements OnInit {

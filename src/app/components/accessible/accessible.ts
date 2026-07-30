@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-accessible',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './accessible.html',
 })
 export class AccessibleComponent {

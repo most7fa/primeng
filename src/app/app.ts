@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { AccessibleComponent } from './components/accessible/accessible';
 import { AccessibleCheckboxComponent } from './components/accessible-checkbox/accessible-checkbox';
 import { AutocompleteComponent } from './components/autocomplete/autocomplete';
@@ -39,6 +39,7 @@ import { TextareaComponent } from './components/textarea/textarea';
     SpinComponent, TextareaComponent
   ],
   templateUrl: './app.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './app.css'
 })
 export class App {}

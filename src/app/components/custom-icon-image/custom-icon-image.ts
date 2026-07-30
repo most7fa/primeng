@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SelectModule } from 'primeng/select';
 
@@ -6,6 +6,7 @@ import { SelectModule } from 'primeng/select';
   selector: 'app-custom-icon-image',
   standalone: true,
   imports: [SelectModule, FormsModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './custom-icon-image.html',
 })
 export class CustomIconImageComponent {

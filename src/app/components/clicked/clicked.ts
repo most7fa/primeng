@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-clicked',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './clicked.html',
 })
 export class ClickedComponent {

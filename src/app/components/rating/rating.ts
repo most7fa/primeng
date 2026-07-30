@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
 
@@ -6,6 +6,7 @@ import { RatingModule } from 'primeng/rating';
   selector: 'app-rating',
   standalone: true,
   imports: [RatingModule, FormsModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './rating.html',
 })
 export class RatingComponent {

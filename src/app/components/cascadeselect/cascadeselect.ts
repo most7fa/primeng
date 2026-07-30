@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 
@@ -6,6 +6,7 @@ import { CascadeSelectModule } from 'primeng/cascadeselect';
   selector: 'app-cascadeselect',
   standalone: true,
   imports: [CascadeSelectModule, FormsModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './CascadeSelect.html',
 })
 export class CascadeselectComponent implements OnInit {

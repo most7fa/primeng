@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SelectButtonModule } from 'primeng/selectbutton';
 
@@ -6,6 +6,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
   selector: 'app-select-button',
   standalone: true,
   imports: [SelectButtonModule, FormsModule],
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './select-button.html',
 })
 export class SelectButtonComponent {

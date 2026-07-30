@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
 import { FileUploadModule, FileUploadEvent } from 'primeng/fileupload';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
@@ -10,6 +10,7 @@ import { MessageService } from 'primeng/api';
   imports: [FileUploadModule, ButtonModule, ToastModule],
   providers: [MessageService],
   templateUrl: './file-upload.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './file-upload.css'
 })
 export class FileUploadComponent {
