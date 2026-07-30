@@ -3,12 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-cascadeselect',
   standalone: true,
   imports: [CascadeSelectModule, FormsModule],
   templateUrl: './CascadeSelect.html',
 })
-export class App implements OnInit {
+export class CascadeselectComponent implements OnInit {
   countries: any[] = [];
 
   selectedCity: any;

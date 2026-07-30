@@ -3,11 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { RadioButtonModule } from 'primeng/radiobutton';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-radio-button',
   standalone: true,
   imports: [RadioButtonModule, FormsModule],
   templateUrl: './radio-button.html',
 })
-export class App {
+export class RadioButtonComponent {
   ingredient: string | undefined;
 }

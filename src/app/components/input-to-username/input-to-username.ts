@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-input-to-username',
   standalone: true,
   templateUrl: './input-to-username.html',
 })
-export class App {}
+export class InputToUsernameComponent {}

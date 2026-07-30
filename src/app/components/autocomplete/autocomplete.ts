@@ -8,12 +8,12 @@ interface Command {
 }
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-autocomplete',
   standalone: true,
   imports: [AutoCompleteModule, FormsModule],
   templateUrl: './AutoComplete.html',
 })
-export class App {
+export class AutocompleteComponent {
   selectedCommand: Command | undefined;
 
   filteredCommands: Command[] = [];

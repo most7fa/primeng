@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-accessible',
   standalone: true,
   templateUrl: './accessible.html',
 })
-export class App {
+export class AccessibleComponent {
   checked = false;
 
   toggle() {

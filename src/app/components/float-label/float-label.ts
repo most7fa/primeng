@@ -4,11 +4,11 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-float-label',
   standalone: true,
   imports: [FloatLabelModule, InputTextModule, FormsModule],
   templateUrl: './float-label.html',
 })
-export class App {
+export class FloatLabelComponent {
   value: string | undefined;
 }

@@ -5,9 +5,9 @@ import { Search } from '@primeicons/angular/search';
 import { User } from '@primeicons/angular/user';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-color',
   standalone: true,
   imports: [Check, Times, Search, User],
   templateUrl: './color.html',
 })
-export class App {}
+export class ColorComponent {}

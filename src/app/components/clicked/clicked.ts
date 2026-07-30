@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-clicked',
   standalone: true,
   templateUrl: './clicked.html',
 })
-export class App {
+export class ClickedComponent {
 
   onButtonClick(event: MouseEvent) {
     console.log('Clicked', event);

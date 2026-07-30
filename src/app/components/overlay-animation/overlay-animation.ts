@@ -3,12 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { SelectModule } from 'primeng/select';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-overlay-animation',
   standalone: true,
   imports: [FormsModule, SelectModule],
   templateUrl: './overlay-animation.html',
 })
-export class App {
+export class OverlayAnimationComponent {
   cities = [
     { name: 'Cairo' },
     { name: 'Alexandria' },

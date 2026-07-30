@@ -3,12 +3,12 @@ import { PIcon } from '@primeicons/angular/p-icon';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-programmatic',
   standalone: true,
   imports: [PIcon, ButtonModule],
   templateUrl: './programmatic.html',
 })
-export class App {
+export class ProgrammaticComponent {
   icons = ['home', 'star', 'heart', 'bell'];
 
   selectedIcon = signal<string>('home');

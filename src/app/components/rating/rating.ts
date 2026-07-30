@@ -3,11 +3,11 @@ import { FormsModule } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-rating',
   standalone: true,
   imports: [RatingModule, FormsModule],
   templateUrl: './rating.html',
 })
-export class App {
+export class RatingComponent {
   value: number = 3.5;
 }

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-accessible-checkbox',
   standalone: true,
   templateUrl: './accessible-checkbox.html',
 })
-export class App {
+export class AccessibleCheckboxComponent {
   checked = false;
 
   toggle() {
