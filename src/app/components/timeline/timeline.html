@@ -1,0 +1,6 @@
+<p-timeline [value]="events">
+    <ng-template #content let-event>
+        <h4>{{ event.status }}</h4>
+        <p>{{ event.date }}</p>
+    </ng-template>
+</p-timeline>

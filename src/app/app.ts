@@ -29,6 +29,9 @@ import { SpeedDialComponent } from './components/speed-dial/speed-dial';
 import { SpinComponent } from './components/spin/spin';
 import { TextareaComponent } from './components/textarea/textarea';
 import { Tabs } from './components/tabs/tabs';
+import { Timeline } from './components/timeline/timeline';
+import { Stepper } from './components/stepper/stepper';
+
 
 @Component({
   selector: 'app-root',
@@ -40,7 +43,7 @@ import { Tabs } from './components/tabs/tabs';
     HtmlCheckbox, InputOtpComponent, InputToUsernameComponent, KnobComponent,
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
-    SpinComponent, TextareaComponent, Tabs
+    SpinComponent, TextareaComponent, Tabs, Timeline, Stepper
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,

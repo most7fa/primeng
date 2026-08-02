@@ -1,0 +1,44 @@
+<p-stepper [value]="1">
+    <p-step-list>
+        <p-step [value]="1">Personal</p-step>
+        <p-step [value]="2">Address</p-step>
+        <p-step [value]="3">Finish</p-step>
+    </p-step-list>
+
+    <p-step-panels>
+        <p-step-panel [value]="1">
+            <ng-template #content let-activateCallback="activateCallback">
+                <p>Personal Information</p>
+                <button pButton (click)="activateCallback(2)">
+                    Next
+                </button>
+            </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="2">
+            <ng-template #content let-activateCallback="activateCallback">
+                <p>Address Information</p>
+
+                <div class="flex gap-2 mt-3">
+                    <button pButton severity="secondary" (click)="activateCallback(1)">
+                        Back
+                    </button>
+
+                    <button pButton (click)="activateCallback(3)">
+                        Next
+                    </button>
+                </div>
+            </ng-template>
+        </p-step-panel>
+
+        <p-step-panel [value]="3">
+            <ng-template #content let-activateCallback="activateCallback">
+                <p>Completed ✔</p>
+
+                <button pButton severity="secondary" (click)="activateCallback(2)">
+                    Back
+                </button>
+            </ng-template>
+        </p-step-panel>
+    </p-step-panels>
+</p-stepper>
