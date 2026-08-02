@@ -28,6 +28,8 @@ import { SliderComponent } from './components/slider/slider';
 import { SpeedDialComponent } from './components/speed-dial/speed-dial';
 import { SpinComponent } from './components/spin/spin';
 import { TextareaComponent } from './components/textarea/textarea';
+import { Tabs } from './components/tabs/tabs';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -38,7 +40,7 @@ import { TextareaComponent } from './components/textarea/textarea';
     HtmlCheckbox, InputOtpComponent, InputToUsernameComponent, KnobComponent,
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
-    SpinComponent, TextareaComponent
+    SpinComponent, TextareaComponent, Tabs
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
