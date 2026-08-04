@@ -35,6 +35,7 @@ import { Tree } from './components/tree/tree';
 import { Galleria } from './components/galleria/galleria';
 import { AvatarComponent } from './components/avatar/avatar';
 import { BadgeComponent } from './components/badge/badge';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb';
 
 
 @Component({
@@ -47,7 +48,8 @@ import { BadgeComponent } from './components/badge/badge';
     HtmlCheckbox, InputOtpComponent, InputToUsernameComponent, KnobComponent,
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
-    SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, BadgeComponent
+    SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, 
+    BadgeComponent, BreadcrumbComponent
     
   ],
   templateUrl: './app.html',
