@@ -1,34 +1,49 @@
-<div class="flex flex-col items-center gap-4">
+<div class="flex flex-col items-center">
 
-  <div class="flex flex-wrap gap-4 justify-center">
-    <button pButton icon="pi pi-home" aria-label="Home"></button>
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    ">
 
-    <button
-      pButton
-      label="Profile"
-      icon="pi pi-user">
+    <button pButton class="flex items-center gap-2 px-4 py-2">
+      <i class="pi pi-home"></i>
+      <span>Home</span>
     </button>
 
-    <button
-      pButton
-      label="Save"
-      icon="pi pi-check"
-      iconPos="right">
+    <button pButton class="flex items-center gap-2 px-4 py-2">
+      <i class="pi pi-user"></i>
+      <span>Profile</span>
     </button>
+
+    <button pButton class="flex items-center gap-2 px-4 py-2">
+      <span>Save</span>
+      <i class="pi pi-check"></i>
+    </button>
+
   </div>
 
-  <div class="flex flex-wrap gap-4 justify-center">
-    <button
-      pButton
-      label="Search"
-      icon="pi pi-search">
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      flex-wrap: wrap;
+    ">
+
+    <button pButton class="flex items-center gap-2 px-4 py-2">
+      <i class="pi pi-search"></i>
+      <span>Search</span>
     </button>
 
-    <button
-      pButton
-      label="Update"
-      icon="pi pi-refresh">
+    <button pButton class="flex items-center gap-2 px-4 py-2">
+      <i class="pi pi-refresh"></i>
+      <span>Update</span>
     </button>
+
   </div>
 
 </div>
