@@ -1,0 +1,25 @@
+<p-button
+    label="Show Dialog"
+    icon="pi pi-external-link"
+    (onClick)="showDialog()">
+</p-button>
+
+<p-dialog
+    header="PrimeNG Dialog"
+    [(visible)]="visible"
+    [modal]="true"
+    [style]="{ width: '25rem' }">
+
+    <p>
+        This is a simple Dialog component in PrimeNG.
+    </p>
+
+    <ng-template #footer>
+        <p-button
+            label="Close"
+            severity="secondary"
+            (onClick)="visible = false">
+        </p-button>
+    </ng-template>
+
+</p-dialog>

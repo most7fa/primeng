@@ -37,7 +37,7 @@ import { AvatarComponent } from './components/avatar/avatar';
 import { BadgeComponent } from './components/badge/badge';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb';
 import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog';
-
+import { DialogComponent } from './components/dialog/dialog';
 
 @Component({
   selector: 'app-root',
@@ -50,7 +50,7 @@ import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dial
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
     SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, 
-    BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent
+    BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent, DialogComponent,
     
   ],
   templateUrl: './app.html',
