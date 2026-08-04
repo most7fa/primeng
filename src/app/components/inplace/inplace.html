@@ -1,0 +1,14 @@
+<p-inplace>
+
+    <ng-template #display>
+        {{ text }}
+    </ng-template>
+
+    <ng-template #content>
+        <input
+            pInputText
+            [(ngModel)]="text"
+            class="w-full">
+    </ng-template>
+
+</p-inplace>

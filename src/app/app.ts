@@ -49,6 +49,7 @@ import { PickListComponent } from './components/pick-list/pick-list';
 import { OrderListComponent } from './components/order-list/order-list';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner';
 import { ImageCompareComponent } from './components/image-compare/image-compare';
+import { InplaceComponent } from './components/inplace/inplace';
 
 @Component({
   selector: 'app-root',
@@ -64,7 +65,7 @@ import { ImageCompareComponent } from './components/image-compare/image-compare'
     BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent, DialogComponent, MultiSelectComponent,
     MenubarComponent, PanelMenuComponent, ContextMenuComponent, MegaMenuComponent, OrganizationChartComponent,
     TerminalComponent, PickListComponent, OrderListComponent, ProgressSpinnerComponent, ImageCompareComponent,
-    
+    InplaceComponent, 
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
