@@ -1,0 +1,8 @@
+<p-contextmenu #cm [model]="items"></p-contextmenu>
+
+<div
+  (contextmenu)="cm.show($event); $event.preventDefault()"
+  class="border border-dashed border-gray-400 rounded p-6 text-center cursor-pointer"
+>
+  Right Click Here
+</div>
