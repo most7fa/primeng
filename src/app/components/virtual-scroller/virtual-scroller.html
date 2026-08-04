@@ -1,0 +1,14 @@
+<p-scroller
+    [items]="items"
+    [itemSize]="50"
+    scrollHeight="300px">
+
+    <ng-template let-item #item>
+        <div
+            class="flex items-center px-3"
+            style="height:50px;border-bottom:1px solid #e5e7eb;">
+            {{ item }}
+        </div>
+    </ng-template>
+
+</p-scroller>

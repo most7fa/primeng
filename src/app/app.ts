@@ -51,6 +51,7 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
 import { ImageCompareComponent } from './components/image-compare/image-compare';
 import { InplaceComponent } from './components/inplace/inplace';
 import { ScrollTopComponent } from './components/scroll-top/scroll-top';
+import { VirtualScrollerComponent } from './components/virtual-scroller/virtual-scroller';
 
 @Component({
   selector: 'app-root',
@@ -66,7 +67,7 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top';
     BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent, DialogComponent, MultiSelectComponent,
     MenubarComponent, PanelMenuComponent, ContextMenuComponent, MegaMenuComponent, OrganizationChartComponent,
     TerminalComponent, PickListComponent, OrderListComponent, ProgressSpinnerComponent, ImageCompareComponent,
-    InplaceComponent, ScrollTopComponent, 
+    InplaceComponent, ScrollTopComponent, VirtualScrollerComponent, 
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
