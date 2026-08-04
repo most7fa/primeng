@@ -36,6 +36,7 @@ import { Galleria } from './components/galleria/galleria';
 import { AvatarComponent } from './components/avatar/avatar';
 import { BadgeComponent } from './components/badge/badge';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb';
+import { ConfirmDialogComponent } from './components/confirm-dialog/confirm-dialog';
 
 
 @Component({
@@ -49,7 +50,7 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb';
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
     SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, 
-    BadgeComponent, BreadcrumbComponent
+    BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent
     
   ],
   templateUrl: './app.html',
