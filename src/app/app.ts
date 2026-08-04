@@ -42,6 +42,7 @@ import { MultiSelectComponent } from './components/multi-select/multi-select';
 import { MenubarComponent } from './components/menubar/menubar';
 import { PanelMenuComponent } from './components/panel-menu/panel-menu';
 import { ContextMenuComponent } from './components/context-menu/context-menu';
+import { MegaMenuComponent } from './components/mega-menu/mega-menu';
 
 @Component({
   selector: 'app-root',
@@ -55,7 +56,7 @@ import { ContextMenuComponent } from './components/context-menu/context-menu';
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
     SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, 
     BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent, DialogComponent, MultiSelectComponent,
-    MenubarComponent, PanelMenuComponent, ContextMenuComponent, 
+    MenubarComponent, PanelMenuComponent, ContextMenuComponent, MegaMenuComponent, 
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
