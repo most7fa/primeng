@@ -1,0 +1,11 @@
+<p-picklist
+    [source]="source"
+    [target]="target"
+    dataKey="name"
+    breakpoint="960px">
+
+    <ng-template let-item #item>
+        {{ item.name }}
+    </ng-template>
+
+</p-picklist>
