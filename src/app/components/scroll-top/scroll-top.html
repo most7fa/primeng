@@ -1,0 +1,16 @@
+<div style="height: 600px; overflow: auto; border: 1px solid #ddd; padding: 1rem;">
+
+  <h3>Scroll Down</h3>
+
+  @for (item of [].constructor(40); track $index) {
+    <p>
+      This is line {{ $index + 1 }}. Keep scrolling to see the ScrollTop button.
+    </p>
+  }
+
+  <p-scrolltop
+      target="parent"
+      icon="pi pi-arrow-up">
+  </p-scrolltop>
+
+</div>
