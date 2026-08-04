@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { BadgeModule } from 'primeng/badge';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-badge',
-  imports: [],
+  standalone: true,
+  imports: [BadgeModule, ButtonModule],
   templateUrl: './badge.html',
-  styleUrl: './badge.css',
+  changeDetection: ChangeDetectionStrategy.Eager
 })
-export class Badge {
-
-}
+export class BadgeComponent {}

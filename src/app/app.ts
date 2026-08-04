@@ -34,7 +34,7 @@ import { Stepper } from './components/stepper/stepper';
 import { Tree } from './components/tree/tree';
 import { Galleria } from './components/galleria/galleria';
 import { AvatarComponent } from './components/avatar/avatar';
-
+import { BadgeComponent } from './components/badge/badge';
 
 
 @Component({
@@ -47,7 +47,8 @@ import { AvatarComponent } from './components/avatar/avatar';
     HtmlCheckbox, InputOtpComponent, InputToUsernameComponent, KnobComponent,
     OverlayAnimationComponent, ProgrammaticComponent, RadioButtonComponent, RatingComponent,
     SelectButtonComponent, SemanticHtml, Size, SliderComponent, SpeedDialComponent,
-    SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent
+    SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, BadgeComponent
+    
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
