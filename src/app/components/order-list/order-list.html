@@ -1,0 +1,13 @@
+<p-orderlist
+    [value]="products"
+    dataKey="name"
+    header="Products">
+
+    <ng-template #item let-product>
+        <div class="flex justify-between items-center w-full">
+            <span>{{ product.name }}</span>
+            <span>{{ product.price }}</span>
+        </div>
+    </ng-template>
+
+</p-orderlist>

@@ -46,6 +46,7 @@ import { MegaMenuComponent } from './components/mega-menu/mega-menu';
 import { OrganizationChartComponent } from './components/organization-chart/organization-chart';
 import { TerminalComponent } from './components/terminal/terminal';
 import { PickListComponent } from './components/pick-list/pick-list';
+import { OrderListComponent } from './components/order-list/order-list';
 
 @Component({
   selector: 'app-root',
@@ -60,7 +61,7 @@ import { PickListComponent } from './components/pick-list/pick-list';
     SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, 
     BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent, DialogComponent, MultiSelectComponent,
     MenubarComponent, PanelMenuComponent, ContextMenuComponent, MegaMenuComponent, OrganizationChartComponent,
-    TerminalComponent, PickListComponent, 
+    TerminalComponent, PickListComponent, OrderListComponent,
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
