@@ -48,6 +48,7 @@ import { TerminalComponent } from './components/terminal/terminal';
 import { PickListComponent } from './components/pick-list/pick-list';
 import { OrderListComponent } from './components/order-list/order-list';
 import { ProgressSpinnerComponent } from './components/progress-spinner/progress-spinner';
+import { ImageCompareComponent } from './components/image-compare/image-compare';
 
 @Component({
   selector: 'app-root',
@@ -62,7 +63,8 @@ import { ProgressSpinnerComponent } from './components/progress-spinner/progress
     SpinComponent, TextareaComponent, Tabs, Timeline, Stepper, Tree, Galleria, AvatarComponent, 
     BadgeComponent, BreadcrumbComponent, ConfirmDialogComponent, DialogComponent, MultiSelectComponent,
     MenubarComponent, PanelMenuComponent, ContextMenuComponent, MegaMenuComponent, OrganizationChartComponent,
-    TerminalComponent, PickListComponent, OrderListComponent, ProgressSpinnerComponent, 
+    TerminalComponent, PickListComponent, OrderListComponent, ProgressSpinnerComponent, ImageCompareComponent,
+    
   ],
   templateUrl: './app.html',
   changeDetection: ChangeDetectionStrategy.Eager,
